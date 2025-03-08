@@ -5,7 +5,7 @@ import './App.css';
 function App() {
 	return (
 		<Routes>
-			<Route path="/portfolio" element={<Home />} />
+			<Route path="/" element={<Home />} />
 		</Routes>
 	);
 }
