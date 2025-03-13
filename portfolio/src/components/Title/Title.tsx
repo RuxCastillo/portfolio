@@ -22,7 +22,7 @@ export default function Title(): React.ReactElement {
 				<br />
 				<span>
 					⚡ Frontend Engineer at{' '}
-					<span className={styles.about__span}> Itransition Internship</span>
+					<span className={styles.about__span}> Itransition Internship.</span>
 				</span>
 			</div>
 			<div className={styles.icons}>
