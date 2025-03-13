@@ -8,6 +8,22 @@
 
 .aboutMe__text {
 	width: 100%;
+	font-size: 14px;
+}
+
+.aboutMe__h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.green {
+	color: var(--green);
+}
+
+.aboutMe__div {
+	max-width: 300px;
+	max-height: 300px;
+	position: relative;
 }
 
 .aboutMe__img {
@@ -18,8 +34,15 @@
 
 .img {
 	border-radius: 50%;
-	max-width: 300px;
-	max-height: 300px;
+}
+
+.img__squares {
+	position: absolute;
+	top: 0;
+	right: -1.5rem;
+	filter: invert(0.1);
+	height: 100px;
+	width: 100px;
 }
 
 @media (min-width: 768px) {
@@ -29,10 +52,23 @@
 	}
 	.aboutMe__text {
 		width: 50%;
+		font-size: 1rem;
 	}
 	.aboutMe__img {
 		width: 50%;
 	}
 	.img {
+	}
+}
+
+@media (min-width: 1280px) {
+	.aboutMe__div {
+		max-width: 350px;
+		max-height: 350px;
+	}
+	.img__squares {
+		height: 150px;
+		width: 150px;
+		right: -3.5rem;
 	}
 }
