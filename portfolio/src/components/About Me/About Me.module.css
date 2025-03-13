@@ -1,0 +1,38 @@
+.aboutMe {
+	margin-top: 100px;
+	display: flex;
+	margin-bottom: 1rem;
+	gap: 2rem;
+	flex-direction: column;
+}
+
+.aboutMe__text {
+	width: 100%;
+}
+
+.aboutMe__img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.img {
+	border-radius: 50%;
+	max-width: 300px;
+	max-height: 300px;
+}
+
+@media (min-width: 768px) {
+	.aboutMe {
+		margin-top: 144px;
+		flex-direction: row;
+	}
+	.aboutMe__text {
+		width: 50%;
+	}
+	.aboutMe__img {
+		width: 50%;
+	}
+	.img {
+	}
+}
