@@ -1,4 +1,7 @@
+import EmailIcon from '../Icons/EmailIcon';
+import GithubIcon from '../Icons/GithubIcon';
 import styles from './Title.module.css';
+import LinkedInIcon from '../Icons/LinkedInIcon';
 
 export default function Title(): React.ReactElement {
 	return (
@@ -26,9 +29,18 @@ export default function Title(): React.ReactElement {
 				</span>
 			</div>
 			<div className={styles.icons}>
-				<div className={styles.icon}>Github</div>
-				<div className={styles.icon}>LinkedIn</div>
-				<div className={styles.icon}>Email</div>
+				<div className={styles.icon}>
+					<GithubIcon />
+					<span>Github</span>
+				</div>
+				<div className={styles.icon}>
+					<LinkedInIcon />
+					<span>LinkedIn</span>
+				</div>
+				<div className={styles.icon}>
+					<EmailIcon />
+					<span>Email</span>
+				</div>
 			</div>
 		</header>
 	);
