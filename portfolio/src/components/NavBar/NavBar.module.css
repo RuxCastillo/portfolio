@@ -12,9 +12,15 @@
 }
 
 .ul {
-	display: flex;
 	list-style: none;
 	display: none;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+}
+
+.li {
+	margin-right: 1rem;
 }
 
 .icon {
@@ -26,4 +32,58 @@
 
 .llaves {
 	color: var(--gray);
+}
+
+.backgroundBlack {
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	z-index: 40;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.aside {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 300px;
+	z-index: 50;
+	max-width: 300px;
+	padding: 24px;
+	background-color: black;
+	height: 100vh;
+	transition: transform 0.3s ease, opacity 0.3s;
+	opacity: 0;
+	transform: translateX(100%);
+	display: block;
+}
+
+.visible {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.navAside {
+	display: flex;
+}
+
+.iconAside {
+	font-size: 24px;
+	border-bottom: 1px solid rgb(30, 32, 41);
+	padding-bottom: 12px;
+	margin-right: auto;
+}
+
+@media (min-width: 768px) {
+	.span {
+		display: none;
+	}
+	.ul {
+		display: flex;
+	}
+	.aside {
+		display: none;
+	}
 }

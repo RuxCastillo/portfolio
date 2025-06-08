@@ -1,18 +1,19 @@
-import NavBar from './components/NavBar/NavBar';
-import Title from './components/Title/Title';
 //import './App.css';
-import styles from './App.module.css';
-import AboutMe from './components/About Me/About Me';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Start from './pages/Start/Start';
+import Projects from './components/Projects/Projects';
+import Blog from './components/Blog/Blog';
 
 function App() {
 	return (
-		<>
-			<NavBar />
-			<main className={styles.main}>
-				<Title />
-				<AboutMe />
-			</main>
-		</>
+		<Routes>
+			<Route path="/" element={<Start />}>
+				<Route index element={<Home />} />
+				<Route path="/projects" element={<Projects />} />
+				<Route path="/blog" element={<Blog />} />
+			</Route>
+		</Routes>
 	);
 }
 
