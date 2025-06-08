@@ -1,5 +1,5 @@
 import styles from './About Me.module.css';
-import foto from '../../assets/foto retocada.png';
+import foto from '../../assets/foto retocada-removebg-preview.jpg';
 
 export default function AboutMe(): React.ReactElement {
 	return (

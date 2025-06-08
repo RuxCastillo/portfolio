@@ -11,6 +11,10 @@
 	z-index: 10;
 }
 
+.span {
+	cursor: pointer;
+}
+
 .ul {
 	list-style: none;
 	display: none;
@@ -21,6 +25,7 @@
 
 .li {
 	margin-right: 1rem;
+	cursor: pointer;
 }
 
 .icon {
