@@ -15,7 +15,6 @@ export default function NavBar(): React.ReactElement {
 		window.addEventListener('resize', handleResize);
 		return () => window.removeEventListener('resize', handleResize);
 	}, []);
-
 	function handleClickLi(str: string) {
 		navigate(str);
 	}
