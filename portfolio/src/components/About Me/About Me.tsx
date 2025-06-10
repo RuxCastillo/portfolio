@@ -15,15 +15,13 @@ export default function AboutMe(): React.ReactElement {
 					I love building <span className={styles.green}>web applications</span>
 					, which is what I've been specializing in. Exploring new technologies
 					and programming languages excites me, and I had the privilege of doing
-					an <span>internship at Itransition</span>, where I learned a lot and
-					implemented new ideas—that experience made me enjoy{' '}
+					an <span>internship at ITBS</span>, where I'm learning a lot and
+					implementing new ideas. This experience has made me enjoy{' '}
 					<span className={styles.green}>web development</span> even more. The
 					ability to create <span className={styles.green}>interactive</span>{' '}
-					and
-					<span className={styles.green}>accessible solutions</span> that anyone
-					can use is what drew me to the web in the first place.
+					and <span className={styles.green}>accessible solutions</span> that
+					anyone can use is what drew me to the web in the first place.
 				</p>
-
 				<br />
 				<p>
 					When I'm not coding, I enjoy watching movies and anime. I also have a

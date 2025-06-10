@@ -15,8 +15,14 @@ export default function NavBar(): React.ReactElement {
 		window.addEventListener('resize', handleResize);
 		return () => window.removeEventListener('resize', handleResize);
 	}, []);
+
 	function handleClickLi(str: string) {
 		navigate(str);
+	}
+
+	function handleClickLiAside(str: string) {
+		navigate(str);
+		setIsVisibleAside(false);
 	}
 
 	return (
@@ -55,6 +61,26 @@ export default function NavBar(): React.ReactElement {
 					</p>
 					<CloseIcon setVisibleAside={setIsVisibleAside} />
 				</nav>
+				<ul className={styles.ulSideBar}>
+					<li
+						className={styles.liSideBar}
+						onClick={() => handleClickLiAside('')}
+					>
+						Home
+					</li>
+					<li
+						className={styles.liSideBar}
+						onClick={() => handleClickLiAside('/projects')}
+					>
+						Projects
+					</li>
+					<li
+						className={styles.liSideBar}
+						onClick={() => handleClickLiAside('/blog')}
+					>
+						Blog
+					</li>
+				</ul>
 			</aside>
 		</>
 	);

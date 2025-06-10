@@ -24,8 +24,7 @@ export default function Title(): React.ReactElement {
 				<span>🚀 Currently specializing in Full-stack</span>
 				<br />
 				<span>
-					⚡ Web Developer Internship at{' '}
-					<span className={styles.about__span}> Itransition</span>
+					⚡ Web Developer at <span className={styles.about__span}> ITBS</span>
 				</span>
 			</div>
 			<div className={styles.icons}>
