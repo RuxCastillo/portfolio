@@ -1,6 +1,7 @@
 :root {
 	--gray: #8f9094;
 	--green: #3ccf91;
+	--yellow: rgb(246, 162, 14);
 	--font-display-1: calc(5rem + ((1vw - 7.68px) * 5.555));
 	--font-display-2: calc(1.5rem + ((1vw - 7.68px) * 1.04167));
 	--font-display-3: calc(1rem + ((1vw - 7.68px) * 0.69444));

@@ -9,11 +9,13 @@
 .aboutMe__text {
 	width: 100%;
 	font-size: 14px;
+	color: rgb(143, 144, 148);
 }
 
 .aboutMe__h3 {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
+	color: white;
 }
 
 .green {
