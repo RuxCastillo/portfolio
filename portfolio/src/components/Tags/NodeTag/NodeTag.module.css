@@ -1,0 +1,17 @@
+.iconSpan {
+	display: flex;
+	align-items: center;
+	margin-right: 0.5rem;
+	padding: 1px 8px;
+	border-radius: 4px;
+	font-weight: 700;
+}
+
+.nodeIcon {
+	background-color: rgba(226, 232, 240, 0.16);
+	color: rgb(226, 232, 240);
+}
+
+.iconSpan span {
+	margin-left: 5px;
+}
