@@ -3,6 +3,7 @@ import GithubIcon from '../Icons/GithubIcon';
 import styles from './Title.module.css';
 import LinkedInIcon from '../Icons/LinkedInIcon';
 import { motion } from 'framer-motion';
+import Icon from '../Icon/Icon';
 
 export default function Title(): React.ReactElement {
 	return (
@@ -49,18 +50,9 @@ export default function Title(): React.ReactElement {
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ duration: 0.5, delay: 0.8 }}
 			>
-				<div className={styles.icon}>
-					<GithubIcon />
-					<span>Github</span>
-				</div>
-				<div className={styles.icon}>
-					<LinkedInIcon />
-					<span>LinkedIn</span>
-				</div>
-				<div className={styles.icon}>
-					<EmailIcon />
-					<span>Email</span>
-				</div>
+				<Icon icon={<GithubIcon />} text="Github" />
+				<Icon icon={<LinkedInIcon />} text="LinkedIn" />
+				<Icon icon={<EmailIcon />} text="Email" />
 			</motion.div>
 		</header>
 	);

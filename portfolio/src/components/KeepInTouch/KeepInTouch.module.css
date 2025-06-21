@@ -8,6 +8,10 @@
 	margin-top: 10rem;
 }
 
+.div {
+	margin-bottom: 2.5rem;
+}
+
 .h5 {
 	font-size: 36px;
 	font-weight: 700;
@@ -21,4 +25,9 @@
 
 .green {
 	color: var(--green);
+}
+
+.icons {
+	display: flex;
+	justify-content: center;
 }

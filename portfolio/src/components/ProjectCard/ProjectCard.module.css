@@ -15,6 +15,7 @@
 .img {
 	height: 100%;
 	width: 100%;
+	aspect-ratio: 16/9;
 }
 
 .textContainer {
@@ -29,6 +30,7 @@
 .textContainer__titulo {
 	display: flex;
 	align-items: center;
+	margin-bottom: 0.5rem;
 }
 
 .textContainer__tituloH4 {
@@ -40,7 +42,7 @@
 .textContainer__tecnologias {
 	display: flex;
 	font-size: 12px;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
 }
 
 .textContainer__bottom {

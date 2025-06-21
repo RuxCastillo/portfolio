@@ -79,3 +79,9 @@
 		padding-right: 15rem;
 	}
 }
+
+@media (min-width: 1990px) {
+	.title__h1 {
+		font-size: 146px;
+	}
+}

@@ -22,7 +22,7 @@ export default function ElementLatestArticle({
 			ref={ref}
 			initial={{ y: 100, opacity: 0 }}
 			animate={isInView ? { y: 0, opacity: 1 } : {}}
-			transition={{ duration: 0.5 }}
+			transition={{ duration: 0.5, delay: 0.5 }}
 		>
 			<h4 className={styles.h4}>{title}</h4>
 			<p className={styles.p}>

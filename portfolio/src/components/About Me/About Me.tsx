@@ -13,7 +13,7 @@ export default function AboutMe(): React.ReactElement {
 				className={styles.aboutMe__text}
 				initial={{ y: 100, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
-				transition={{ duration: 0.5 }}
+				transition={{ duration: 0.5, delay: 0.5 }}
 			>
 				<h3 className={styles.aboutMe__h3}>⚡ About me</h3>
 				<p>
