@@ -1,10 +1,20 @@
 import styles from './About Me.module.css';
 import foto from '../../assets/foto retocada-removebg-preview.jpg';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 export default function AboutMe(): React.ReactElement {
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
+
 	return (
 		<section className={styles.aboutMe}>
-			<div className={styles.aboutMe__text}>
+			<motion.div
+				className={styles.aboutMe__text}
+				initial={{ y: 100, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.5 }}
+			>
 				<h3 className={styles.aboutMe__h3}>⚡ About me</h3>
 				<p>
 					I've been passionate about programming since I discovered it at a
@@ -27,8 +37,14 @@ export default function AboutMe(): React.ReactElement {
 					When I'm not coding, I enjoy watching movies and anime. I also have a
 					gaming PC where I spend time playing my favorite games. 🎮
 				</p>
-			</div>
-			<div className={styles.aboutMe__img}>
+			</motion.div>
+			<motion.div
+				className={styles.aboutMe__img}
+				ref={ref}
+				initial={{ y: 100, opacity: 0 }}
+				animate={isInView ? { y: 0, opacity: 1 } : {}}
+				transition={{ duration: 0.5 }}
+			>
 				<div className={styles.aboutMe__div}>
 					<img src={foto} alt="" className={styles.img} />
 					<img
@@ -37,7 +53,7 @@ export default function AboutMe(): React.ReactElement {
 						className={styles.img__squares}
 					/>
 				</div>
-			</div>
+			</motion.div>
 		</section>
 	);
 }

@@ -3,10 +3,21 @@ import itbsAppImg from '../../assets/itbs app.png';
 import Link2Icon from '../Icons/Link2Icon';
 import ReactTag from '../Tags/ReactTag/ReactTag';
 import NodeTag from '../Tags/NodeTag/NodeTag';
+import { useInView, motion } from 'framer-motion';
+import { useRef } from 'react';
 
 export default function ProjectCard() {
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
+
 	return (
-		<div className={styles.container}>
+		<motion.div
+			className={styles.container}
+			ref={ref}
+			initial={{ y: 100, opacity: 0 }}
+			animate={isInView ? { y: 0, opacity: 1 } : {}}
+			transition={{ duration: 0.5 }}
+		>
 			<div className={styles.divImg}>
 				<img src={itbsAppImg} alt="" className={styles.img} />
 			</div>
@@ -28,6 +39,6 @@ export default function ProjectCard() {
 					</p>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

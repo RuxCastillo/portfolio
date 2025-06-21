@@ -1,0 +1,33 @@
+.section {
+	margin-bottom: 4rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.5rem;
+}
+
+.div {
+	display: flex;
+	margin-bottom: 20px;
+	grid-column: 1/-1;
+}
+
+.h3 {
+	margin-right: auto;
+	font-size: 20px;
+}
+
+.link {
+	font-size: 14px;
+	text-decoration: none;
+	color: var(--green);
+}
+
+.link:hover {
+	color: var(--yellow);
+}
+
+@media (min-width: 768px) {
+	.section {
+		grid-template-columns: 1fr 1fr;
+	}
+}

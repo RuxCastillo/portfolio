@@ -3,6 +3,7 @@ import styles from './NavBar.module.css';
 import MenuIcon from '../Icons/MenuIcon';
 import { useState, useEffect } from 'react';
 import CloseIcon from '../Icons/CloseIcon';
+import { motion } from 'framer-motion';
 
 export default function NavBar(): React.ReactElement {
 	const navigate = useNavigate();
@@ -27,7 +28,12 @@ export default function NavBar(): React.ReactElement {
 
 	return (
 		<>
-			<nav className={styles.navbar}>
+			<motion.nav
+				className={styles.navbar}
+				initial={{ y: -100, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.5 }}
+			>
 				<p className={styles.icon}>
 					<span className={styles.llaves}>{'{'} </span>R{' '}
 					<span className={styles.llaves}>{'}'}</span>
@@ -46,7 +52,7 @@ export default function NavBar(): React.ReactElement {
 						Blog
 					</li>
 				</ul>
-			</nav>
+			</motion.nav>
 			<div
 				className={styles.backgroundBlack}
 				style={{ display: isVisibleAside ? 'block' : 'none' }}
