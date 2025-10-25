@@ -15,6 +15,7 @@ export default function CloseIcon({
 			stroke-linecap="round"
 			stroke-linejoin="round"
 			className="icon icon-tabler icons-tabler-outline icon-tabler-x"
+			style={{ cursor: 'pointer' }}
 			onClick={() => setVisibleAside(false)}
 		>
 			<path stroke="none" d="M0 0h24v24H0z" fill="none" />

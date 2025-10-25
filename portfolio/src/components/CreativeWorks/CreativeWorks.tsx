@@ -41,7 +41,24 @@ export default function CreativeWorks() {
 				img={itbsImg}
 				link="projects"
 			/>
-			<div className={styles.cardEnMedio}></div>
+			<ProjectCard
+				titulo="ITBS App"
+				text="Aplicacion para checar al personal"
+				tecnologia1={<ReactTag />}
+				tecnologia2={<NodeTag />}
+				img={itbsImg}
+				link="projects"
+			/>
+			<div className={styles.cardEnMedio}>
+				<ProjectCard
+					titulo="ITBS App"
+					text="Aplicacion para checar al personal"
+					tecnologia1={<ReactTag />}
+					tecnologia2={<NodeTag />}
+					img={itbsImg}
+					link="projects"
+				/>
+			</div>
 		</section>
 	);
 }
