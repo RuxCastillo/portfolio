@@ -1,0 +1,52 @@
+{
+	"hero": "image",
+	"title": "My First Job as a Full Stack Software Developer",
+	"fecha": "August 1, 2025",
+	"tiempoDeLeer": "6 min",
+	"bloques": [
+		{
+			"type": "titulo",
+			"body": "Introduction"
+		},
+		{
+			"type": "texto",
+			"body": "I want to share how my first professional experience as a software developer was. Despite having studied for a long time, the first project I was assigned was completely different from what I had practiced. That difference was precisely what made me grow. I experienced for the first time what it means to code under pressure, to work with deadlines, and to face changing requirements along the way. I learned to adapt, to write code that is more flexible, maintainable, and clear. But before getting ahead of myself, let me tell you how it all began."
+		},
+		{
+			"type": "titulo",
+			"body": "My First Programming Job and Real Project"
+		},
+		{
+			"type": "texto",
+			"body": "I joined the company where I currently work as an intern, with the challenge of proving my skills in order to earn a full-time position. To achieve this, I was assigned a key project: developing a technological solution that would help the company gain better control over its remote workers. It was an important project, and the most challenging part was that I had to develop it entirely on my own and within a limited timeframe. From day one, I knew it would be an intense experience but also an invaluable opportunity to prove what I was capable of."
+		},
+		{
+			"type": "titulo",
+			"body": "Challenges and Lessons Learned"
+		},
+		{
+			"type": "texto",
+			"body": "I decided that the best solution would be a web application, as it would meet all the project’s needs: accessible from any device, centralized, and easy to maintain. At first, it seemed simple, but I soon realized that each new requirement brought a new challenge. I had to implement a complete user hierarchy system with distinct roles and permissions — administrators, supervisors, and employees — which pushed me to think about more scalable and secure structures. I also developed a notification system that integrated push notifications using the Web Push API and automated email delivery, something entirely new to me."
+		},
+		{
+			"type": "texto",
+			"body": "Another major challenge was working with CSS. Since the platform was so large, maintaining visual consistency across many views and components became a constant challenge. I also made sure to build the application with semantic and accessible HTML, applying good practices to provide a clear and organized experience."
+		},
+		{
+			"type": "texto",
+			"body": "Throughout development, I gave a lot of thought to the application's security, so I implemented several measures to prevent common vulnerabilities such as injections, XSS, and insecure data handling. I also learned to work with various frontend and backend libraries, which broadened my understanding of how to integrate tools effectively within the web ecosystem. One of the most rewarding experiences was learning how to generate dynamic PDF files with tables, logos, and customized information, which allowed me to create visual reports directly from the application."
+		},
+		{
+			"type": "texto",
+			"body": "I was responsible for the entire development cycle: UI/UX design, frontend, backend, database modeling, deployment, and testing. Each technical obstacle became a lesson in patience, analysis, and perseverance, and every new tool or concept I mastered turned into a personal achievement that made me a better developer."
+		},
+		{
+			"type": "titulo",
+			"body": "Conclusions"
+		},
+		{
+			"type": "texto",
+			"body": "This project marked a before and after in my professional life. I learned to solve complex problems on my own, to research, experiment, and never give up. Every error, every roadblock, and every late night of frustration eventually turned into small victories that brought me closer to the goal. For the first time, I felt the satisfaction of seeing real people using an application I had built — a tool that genuinely made their work easier. That feeling of impact, of seeing my code become useful in the real world, was deeply motivating. Thanks to this project, I went from intern to full-time employee, and today I continue working at the same company, facing new challenges with the same passion. I still maintain and improve that first system, which now has more than 70 endpoints and over 20 database tables. Looking back, I can say every effort was worth it: each challenge became an opportunity to grow both as a professional and as a person."
+		}
+	]
+}
