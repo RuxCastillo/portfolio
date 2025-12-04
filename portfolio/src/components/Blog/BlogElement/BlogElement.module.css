@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	color: white;
+	text-decoration: none;
+	min-width: 100%;
+	gap: 2.5rem;
+}
+
+.meta {
+	text-align: right;
+	color: var(--gray);
+}
+
+.title {
+	font-size: 1.3rem;
+}
+
+.p {
+	color: var(--gray);
+}
+
+.link {
+	text-decoration: none;
+	color: var(--green);
+}

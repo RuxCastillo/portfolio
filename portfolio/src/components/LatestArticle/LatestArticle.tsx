@@ -4,6 +4,17 @@ import styles from './LatestArticle.module.css';
 import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 
+const blogs = [
+	{
+		title: 'My First Job as a Full Stack Software Developer',
+		fecha: 'August 1, 2025',
+		tiempoDeLeer: '6 min',
+		about:
+			'How I went from being an intern to becoming a full-time employee, and the most ambitious project I had built up to that moment.',
+		id: 'my-first-job',
+	},
+];
+
 export default function LatestArticle() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
@@ -23,9 +34,10 @@ export default function LatestArticle() {
 				</Link>
 			</motion.div>
 			<ElementLatestArticle
-				title="2024 Retrospective"
-				date="January 21 2025"
-				time="6 min read"
+				title={blogs[0].title}
+				date={blogs[0].fecha}
+				time={`${blogs[0].tiempoDeLeer} read`}
+				url={`/blog/${blogs[0].id}`}
 			/>
 		</section>
 	);

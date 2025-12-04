@@ -30,11 +30,19 @@
 	cursor: pointer;
 }
 
+.link,
+.iconR {
+	color: white;
+	text-decoration: none;
+}
+
 .icon {
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 48px;
 	margin-right: auto;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .llaves {

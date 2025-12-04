@@ -1,5 +1,17 @@
 import { Search } from 'lucide-react';
 import styles from './Blog.module.css';
+import BlogElement from './BlogElement/BlogElement';
+
+const blogs = [
+	{
+		title: 'My First Job as a Full Stack Software Developer',
+		fecha: 'August 1, 2025',
+		tiempoDeLeer: '6 min',
+		about:
+			'How I went from being an intern to becoming a full-time employee, and the most ambitious project I had built up to that moment.',
+		id: 'my-first-job',
+	},
+];
 
 export default function Blog() {
 	return (
@@ -19,7 +31,11 @@ export default function Blog() {
 					<Search size={19} />
 				</div>
 			</div>
-			<div className={styles.body}></div>
+			<div className={styles.body}>
+				{blogs.map((blog) => (
+					<BlogElement blog={blog} />
+				))}
+			</div>
 		</section>
 	);
 }

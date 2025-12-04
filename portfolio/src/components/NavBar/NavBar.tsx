@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
 import MenuIcon from '../Icons/MenuIcon';
 import { useState, useEffect } from 'react';
@@ -6,7 +6,6 @@ import CloseIcon from '../Icons/CloseIcon';
 import { motion } from 'framer-motion';
 
 export default function NavBar(): React.ReactElement {
-	const navigate = useNavigate();
 	const [isVisibleAside, setIsVisibleAside] = useState(false);
 
 	useEffect(() => {
@@ -17,15 +16,6 @@ export default function NavBar(): React.ReactElement {
 		return () => window.removeEventListener('resize', handleResize);
 	}, []);
 
-	function handleClickLi(str: string) {
-		navigate(str);
-	}
-
-	function handleClickLiAside(str: string) {
-		navigate(str);
-		setIsVisibleAside(false);
-	}
-
 	return (
 		<>
 			<motion.nav
@@ -34,22 +24,29 @@ export default function NavBar(): React.ReactElement {
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ duration: 0.5 }}
 			>
-				<p className={styles.icon}>
-					<span className={styles.llaves}>{'{'} </span>R{' '}
+				<Link to="" className={styles.icon}>
+					<span className={styles.llaves}>{'{'} </span>
+					<span className={styles.iconR}>R</span>{' '}
 					<span className={styles.llaves}>{'}'}</span>
-				</p>
+				</Link>
 				<span className={styles.span} onClick={() => setIsVisibleAside(true)}>
 					<MenuIcon />
 				</span>
 				<ul className={styles.ul}>
-					<li className={styles.li} onClick={() => handleClickLi('')}>
-						Home
+					<li className={styles.li}>
+						<Link to="" className={styles.link}>
+							Home
+						</Link>
 					</li>
-					<li className={styles.li} onClick={() => handleClickLi('/projects')}>
-						Projects
+					<li className={styles.li}>
+						<Link to="/projects" className={styles.link}>
+							Projects
+						</Link>
 					</li>
-					<li className={styles.li} onClick={() => handleClickLi('/blog')}>
-						Blog
+					<li className={styles.li}>
+						<Link to="/blog" className={styles.link}>
+							Blog
+						</Link>
 					</li>
 				</ul>
 			</motion.nav>
@@ -68,23 +65,32 @@ export default function NavBar(): React.ReactElement {
 					<CloseIcon setVisibleAside={setIsVisibleAside} />
 				</nav>
 				<ul className={styles.ulSideBar}>
-					<li
-						className={styles.liSideBar}
-						onClick={() => handleClickLiAside('')}
-					>
-						Home
+					<li className={styles.liSideBar}>
+						<Link
+							to=""
+							className={styles.link}
+							onClick={() => setIsVisibleAside(false)}
+						>
+							Home
+						</Link>
 					</li>
-					<li
-						className={styles.liSideBar}
-						onClick={() => handleClickLiAside('/projects')}
-					>
-						Projects
+					<li className={styles.liSideBar}>
+						<Link
+							to="/projects"
+							className={styles.link}
+							onClick={() => setIsVisibleAside(false)}
+						>
+							Projects
+						</Link>
 					</li>
-					<li
-						className={styles.liSideBar}
-						onClick={() => handleClickLiAside('/blog')}
-					>
-						Blog
+					<li className={styles.liSideBar}>
+						<Link
+							to="/blog"
+							className={styles.link}
+							onClick={() => setIsVisibleAside(false)}
+						>
+							Blog
+						</Link>
 					</li>
 				</ul>
 			</aside>
