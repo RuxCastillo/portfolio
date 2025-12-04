@@ -35,29 +35,29 @@ export default function CreativeWorks() {
 			</motion.div>
 			<ProjectCard
 				titulo="ITBS App"
-				text="Aplicacion para checar al personal"
+				text="Human resources app"
 				tecnologia1={<ReactTag />}
 				tecnologia2={<NodeTag />}
 				img={itbsImg}
 				link="projects"
 			/>
-			<ProjectCard
+			{/* 			<ProjectCard
 				titulo="ITBS App"
 				text="Aplicacion para checar al personal"
 				tecnologia1={<ReactTag />}
 				tecnologia2={<NodeTag />}
 				img={itbsImg}
 				link="projects"
-			/>
+			/> */}
 			<div className={styles.cardEnMedio}>
-				<ProjectCard
+				{/* 				<ProjectCard
 					titulo="ITBS App"
 					text="Aplicacion para checar al personal"
 					tecnologia1={<ReactTag />}
 					tecnologia2={<NodeTag />}
 					img={itbsImg}
 					link="projects"
-				/>
+				/> */}
 			</div>
 		</section>
 	);

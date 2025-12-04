@@ -26,13 +26,13 @@ export default function Projects() {
 			<div className={styles.body}>
 				<ProjectCard
 					titulo="ITBS App"
-					text="Aplicacion para checar al personal"
+					text="Human resources app"
 					tecnologia1={<ReactTag />}
 					tecnologia2={<NodeTag />}
 					img={itbsImg}
 					link="projects"
 				/>
-				<ProjectCard
+				{/* 				<ProjectCard
 					titulo="ITBS App"
 					text="Aplicacion para checar al personal"
 					tecnologia1={<ReactTag />}
@@ -47,7 +47,7 @@ export default function Projects() {
 					tecnologia2={<NodeTag />}
 					img={itbsImg}
 					link="projects"
-				/>
+				/> */}
 			</div>
 		</section>
 	);
