@@ -49,6 +49,7 @@ export default function ProjectCard({
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label={`Open ${title}`}
+								className={styles.textContainer__link}
 							>
 								<Link2Icon />
 							</a>

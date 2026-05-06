@@ -35,10 +35,11 @@ export default function CreativeWorks() {
 			</motion.div>
 			<ProjectCard
 				title="ITBS App"
-				text="Human resources app"
+				text="Human resources platform for managing employees and attendance, with role-based access and reporting."
 				tech1={<ReactTag />}
 				tech2={<NodeTag />}
 				img={itbsImg}
+				liveUrl="https://itbsapp.hddisc.com.mx/"
 			/>
 			<div className={styles.cardMiddle}></div>
 		</section>

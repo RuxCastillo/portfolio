@@ -39,6 +39,16 @@
 	line-height: 36px;
 }
 
+.textContainer__link {
+	color: #e5e5e5;
+	display: inline-flex;
+	align-items: center;
+}
+
+.textContainer__link:hover {
+	color: #ffffff;
+}
+
 .textContainer__techs {
 	display: flex;
 	font-size: 12px;
