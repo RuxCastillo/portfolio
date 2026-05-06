@@ -2,7 +2,7 @@
 
 My personal portfolio site, where I introduce myself, showcase the projects I've worked on, and publish articles about my journey as a Full-stack Developer.
 
-> 🌐 **Live demo:** _coming soon_
+> 🌐 **Live site:** [ruben-lopez.com](https://www.ruben-lopez.com/)
 > 📧 **Contact:** [rubenldc1412@gmail.com](mailto:rubenldc1412@gmail.com) · [LinkedIn](https://www.linkedin.com/in/rubenldc/) · [GitHub](https://github.com/RuxCastillo)
 
 ---
