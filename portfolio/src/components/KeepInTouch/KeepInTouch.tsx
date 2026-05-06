@@ -4,7 +4,7 @@ import { useInView, motion } from 'framer-motion';
 import Icon from '../Icon/Icon';
 import EmailIcon from '../Icons/EmailIcon';
 import LinkedInIcon from '../Icons/LinkedInIcon';
-import CVIcon from '../Icons/CVIcon';
+// import CVIcon from '../Icons/CVIcon';
 
 export default function KeepInTouch() {
 	const ref = useRef(null);
@@ -30,9 +30,19 @@ export default function KeepInTouch() {
 					</p>
 				</div>
 				<div className={styles.icons}>
-					<Icon icon={<LinkedInIcon />} text="LinkedIn" />
-					<Icon icon={<EmailIcon />} text="Email" />
-					<Icon icon={<CVIcon />} text="Resume" />
+					<Icon
+						icon={<LinkedInIcon />}
+						text="LinkedIn"
+						href="https://www.linkedin.com/in/rubenldc/"
+					/>
+					<Icon
+						icon={<EmailIcon />}
+						text="Email"
+						href="mailto:rubenldc1412@gmail.com"
+					/>
+					{/* TODO: agregar link al Resume cuando este listo
+					<Icon icon={<CVIcon />} text="Resume" href="/resume.pdf" />
+					*/}
 				</div>
 			</motion.div>
 		</section>

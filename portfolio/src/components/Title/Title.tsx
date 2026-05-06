@@ -50,9 +50,21 @@ export default function Title(): React.ReactElement {
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ duration: 0.5, delay: 0.8 }}
 			>
-				<Icon icon={<GithubIcon />} text="Github" />
-				<Icon icon={<LinkedInIcon />} text="LinkedIn" />
-				<Icon icon={<EmailIcon />} text="Email" />
+				<Icon
+					icon={<GithubIcon />}
+					text="Github"
+					href="https://github.com/RuxCastillo"
+				/>
+				<Icon
+					icon={<LinkedInIcon />}
+					text="LinkedIn"
+					href="https://www.linkedin.com/in/rubenldc/"
+				/>
+				<Icon
+					icon={<EmailIcon />}
+					text="Email"
+					href="mailto:rubenldc1412@gmail.com"
+				/>
 			</motion.div>
 		</header>
 	);
