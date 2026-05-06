@@ -1,6 +1,6 @@
 import Title from '../Title/Title';
 //import './App.css';
-import AboutMe from '../About Me/About Me';
+import AboutMe from '../AboutMe/AboutMe';
 import CreativeWorks from '../CreativeWorks/CreativeWorks';
 import LatestArticle from '../LatestArticle/LatestArticle';
 import KeepInTouch from '../KeepInTouch/KeepInTouch';

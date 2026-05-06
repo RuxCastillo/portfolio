@@ -1,4 +1,4 @@
-import styles from './About Me.module.css';
+import styles from './AboutMe.module.css';
 import foto from '../../assets/foto retocada-removebg-preview.jpg';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
