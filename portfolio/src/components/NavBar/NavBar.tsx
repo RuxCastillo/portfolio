@@ -25,9 +25,9 @@ export default function NavBar(): React.ReactElement {
 				transition={{ duration: 0.5 }}
 			>
 				<Link to="" className={styles.icon}>
-					<span className={styles.llaves}>{'{'} </span>
+					<span className={styles.braces}>{'{'} </span>
 					<span className={styles.iconR}>R</span>{' '}
-					<span className={styles.llaves}>{'}'}</span>
+					<span className={styles.braces}>{'}'}</span>
 				</Link>
 				<span className={styles.span} onClick={() => setIsVisibleAside(true)}>
 					<MenuIcon />
@@ -59,8 +59,8 @@ export default function NavBar(): React.ReactElement {
 			>
 				<nav className={styles.navAside}>
 					<p className={styles.iconAside}>
-						<span className={styles.llaves}>{'{'} </span>R{' '}
-						<span className={styles.llaves}>{'}'}</span>
+						<span className={styles.braces}>{'{'} </span>R{' '}
+						<span className={styles.braces}>{'}'}</span>
 					</p>
 					<CloseIcon setVisibleAside={setIsVisibleAside} />
 				</nav>

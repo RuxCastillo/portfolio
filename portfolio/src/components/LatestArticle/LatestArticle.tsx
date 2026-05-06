@@ -7,8 +7,8 @@ import { useRef } from 'react';
 const blogs = [
 	{
 		title: 'My First Job as a Full Stack Software Developer',
-		fecha: 'August 1, 2025',
-		tiempoDeLeer: '6 min',
+		date: 'August 1, 2025',
+		readTime: '6 min',
 		about:
 			'How I went from being an intern to becoming a full-time employee, and the most ambitious project I had built up to that moment.',
 		id: 'my-first-job',
@@ -35,8 +35,8 @@ export default function LatestArticle() {
 			</motion.div>
 			<ElementLatestArticle
 				title={blogs[0].title}
-				date={blogs[0].fecha}
-				time={`${blogs[0].tiempoDeLeer} read`}
+				date={blogs[0].date}
+				time={`${blogs[0].readTime} read`}
 				url={`/blog/${blogs[0].id}`}
 			/>
 		</section>

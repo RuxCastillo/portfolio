@@ -35,10 +35,10 @@
 	color: var(--gray);
 }
 
-.titulo {
+.heading {
 	margin-bottom: 1rem;
 }
 
-.texto {
+.paragraph {
 	margin-bottom: 2rem;
 }

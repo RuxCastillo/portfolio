@@ -5,8 +5,8 @@ import BlogElement from './BlogElement/BlogElement';
 const blogs = [
 	{
 		title: 'My First Job as a Full Stack Software Developer',
-		fecha: 'August 1, 2025',
-		tiempoDeLeer: '6 min',
+		date: 'August 1, 2025',
+		readTime: '6 min',
 		about:
 			'How I went from being an intern to becoming a full-time employee, and the most ambitious project I had built up to that moment.',
 		id: 'my-first-job',
@@ -33,7 +33,7 @@ export default function Blog() {
 			</div>
 			<div className={styles.body}>
 				{blogs.map((blog) => (
-					<BlogElement blog={blog} />
+					<BlogElement key={blog.id} blog={blog} />
 				))}
 			</div>
 		</section>
