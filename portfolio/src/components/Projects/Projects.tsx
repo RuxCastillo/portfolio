@@ -25,29 +25,12 @@ export default function Projects() {
 			</div>
 			<div className={styles.body}>
 				<ProjectCard
-					titulo="ITBS App"
+					title="ITBS App"
 					text="Human resources app"
-					tecnologia1={<ReactTag />}
-					tecnologia2={<NodeTag />}
+					tech1={<ReactTag />}
+					tech2={<NodeTag />}
 					img={itbsImg}
-					link="projects"
 				/>
-				{/* 				<ProjectCard
-					titulo="ITBS App"
-					text="Aplicacion para checar al personal"
-					tecnologia1={<ReactTag />}
-					tecnologia2={<NodeTag />}
-					img={itbsImg}
-					link="projects"
-				/>
-				<ProjectCard
-					titulo="ITBS App"
-					text="Aplicacion para checar al personal"
-					tecnologia1={<ReactTag />}
-					tecnologia2={<NodeTag />}
-					img={itbsImg}
-					link="projects"
-				/> */}
 			</div>
 		</section>
 	);

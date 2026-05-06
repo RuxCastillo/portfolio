@@ -43,7 +43,7 @@
 	color: var(--gray);
 }
 
-.cardEnMedio {
+.cardMiddle {
 	margin: 1rem 0;
 	max-height: 500px;
 }
@@ -65,7 +65,7 @@
 	.header__link2 {
 		display: block;
 	}
-	.cardEnMedio {
+	.cardMiddle {
 		position: relative;
 		top: 25%;
 		grid-column: 1/2;

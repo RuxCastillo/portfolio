@@ -8,7 +8,7 @@
 	margin-bottom: 1rem;
 }
 
-.divImg {
+.imgWrapper {
 	height: 60%;
 }
 
@@ -27,19 +27,19 @@
 	border-bottom: 1px solid rgb(51, 51, 51);
 }
 
-.textContainer__titulo {
+.textContainer__title {
 	display: flex;
 	align-items: center;
 	margin-bottom: 0.5rem;
 }
 
-.textContainer__tituloH4 {
+.textContainer__titleH4 {
 	margin-right: auto;
 	font-size: 24px;
 	line-height: 36px;
 }
 
-.textContainer__tecnologias {
+.textContainer__techs {
 	display: flex;
 	font-size: 12px;
 	margin-bottom: 8px;

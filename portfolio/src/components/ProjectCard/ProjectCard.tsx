@@ -2,30 +2,31 @@ import styles from './ProjectCard.module.css';
 import Link2Icon from '../Icons/Link2Icon';
 import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
 
-interface ProjectCardPros {
+interface ProjectCardProps {
 	text: string;
-	titulo: string;
-	link: string;
-	tecnologia1: React.ReactElement;
-	tecnologia2?: React.ReactElement;
-	tecnologia3?: React.ReactElement;
+	title: string;
+	tech1: React.ReactElement;
+	tech2?: React.ReactElement;
+	tech3?: React.ReactElement;
 	img: string;
+	repoUrl?: string;
+	liveUrl?: string;
 }
 
 export default function ProjectCard({
 	text,
-	titulo,
-	link,
-	tecnologia1,
-	tecnologia2,
-	tecnologia3,
+	title,
+	tech1,
+	tech2,
+	tech3,
 	img,
-}: ProjectCardPros) {
+	repoUrl,
+	liveUrl,
+}: ProjectCardProps) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
-	const navigate = useNavigate();
+	const primaryUrl = liveUrl ?? repoUrl;
 
 	return (
 		<motion.div
@@ -34,21 +35,29 @@ export default function ProjectCard({
 			initial={{ y: 100, opacity: 0 }}
 			animate={isInView ? { y: 0, opacity: 1 } : {}}
 			transition={{ duration: 0.5, delay: 0.5 }}
-			onClick={() => navigate(link)}
 		>
-			<div className={styles.divImg}>
-				<img src={img} alt="" className={styles.img} />
+			<div className={styles.imgWrapper}>
+				<img src={img} alt={`${title} preview`} className={styles.img} />
 			</div>
 			<div className={styles.textContainer}>
 				<div className={styles.textContainer__top}>
-					<div className={styles.textContainer__titulo}>
-						<h4 className={styles.textContainer__tituloH4}>{titulo}</h4>
-						<Link2Icon />
+					<div className={styles.textContainer__title}>
+						<h4 className={styles.textContainer__titleH4}>{title}</h4>
+						{primaryUrl && (
+							<a
+								href={primaryUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label={`Open ${title}`}
+							>
+								<Link2Icon />
+							</a>
+						)}
 					</div>
-					<div className={styles.textContainer__tecnologias}>
-						{tecnologia1}
-						{tecnologia2}
-						{tecnologia3}
+					<div className={styles.textContainer__techs}>
+						{tech1}
+						{tech2}
+						{tech3}
 					</div>
 				</div>
 				<div className={styles.textContainer__bottom}>
